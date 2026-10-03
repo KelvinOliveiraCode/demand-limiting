@@ -1,0 +1,9 @@
+Simulacao concluida / simulation complete
+- Demanda do mes (sem corte): 269.58 kW
+- Demanda do mes (com corte): 260.00 kW
+- Custo total sem corte: R$ 43,543.41
+- Custo total com corte: R$ 43,142.82
+- Economia: R$ 400.59 (0.92%)
+- Multa evitada: R$ 90.24
+AVISO: sem corte, a demanda estoura o contrato; a multa de excedente e evitada com o corte. WARNING: without the cut the demand exceeds the contract; the excess fine is avoided with the cut.
+Relatorio gravado em: exemplos\relatorio-corte.md

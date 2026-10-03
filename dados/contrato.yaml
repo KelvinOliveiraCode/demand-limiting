@@ -1,0 +1,35 @@
+# Contrato de energia ficticio - unidade UTA-DEMO-0001
+# Fictitious energy contract - unit UTA-DEMO-0001
+#
+# Valores plausiveis, NAO sao tarifas reais.
+# Plausible values, NOT real tariffs.
+
+unidade: "UTA-DEMO-0001"
+tensao: "baixa"
+periodo: "mes"
+
+# Demanda contratada em kW. O pico mensal (maior media de 15 min)
+# acima deste valor gera excedente e multa de 30% sobre ele.
+# Contracted demand in kW. The monthly peak (highest 15-min average)
+# above this value is an excess and earns a 30% fine on it.
+demanda_contratada_kw: 260.0
+
+# Tarifas ficticias / fictitious tariffs (values not real)
+tarifas:
+  energia_ponta_rpor_kwh: 0.742
+  energia_fora_ponta_rpor_kwh: 0.568
+  demanda_rpor_kw: 31.40
+  multa_percentual: 30.0
+
+# Janelas de PONTA em minutos do dia. Fora delas, e FORA_PONTA.
+# PONTA windows in minutes of the day. Outside them: FORA_PONTA.
+faixa_ponta:
+  - ["08:00", "12:00"]
+  - ["14:00", "20:00"]
+
+# Tempo minimo de acionamento do corte, em minutos. Uma vez cortada,
+# a carga fica cortada por pelo menos esse tempo antes de poder ligar
+# de novo, evitando liga/desliga constante.
+# Minimum cut actuation time, in minutes. Once a load is cut it stays
+# cut for at least this long before it may turn back on.
+tempo_minimo_acionamento_minutos: 30

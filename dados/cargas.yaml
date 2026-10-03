@@ -1,0 +1,45 @@
+# Cargas ficticias da unidade UTA-DEMO-0001.
+# Fictitious loads of unit UTA-DEMO-0001.
+#
+# prioridade: 1 = nao cortar nunca, 2 = cortar parcialmente (antes),
+#             3 = cortar por ultimo.
+# priority:   1 = never cut, 2 = cut partially (first), 3 = cut last.
+#
+# recorte_maximo_percent: maior parte da potencia da carga que pode
+# ser cortada num intervalo (0 a 100).
+# recorte_maximo_percent: max share of the load power that may be cut
+# in one interval (0 to 100).
+
+cargas:
+  - nome: "Iluminacao-Atendimento"
+    tipo: "iluminacao"
+    prioridade: 1
+    recorte_maximo_percent: 0
+  - nome: "Iluminacao-Operacional"
+    tipo: "iluminacao"
+    prioridade: 1
+    recorte_maximo_percent: 0
+  - nome: "Climatizacao-Comercial"
+    tipo: "climatizacao"
+    prioridade: 2
+    recorte_maximo_percent: 25
+  - nome: "Climatizacao-Servicos"
+    tipo: "climatizacao"
+    prioridade: 2
+    recorte_maximo_percent: 25
+  - nome: "Climatizacao-Deposito"
+    tipo: "climatizacao"
+    prioridade: 2
+    recorte_maximo_percent: 25
+  - nome: "Producao-Linha-A"
+    tipo: "producao"
+    prioridade: 3
+    recorte_maximo_percent: 100
+  - nome: "Producao-Linha-B"
+    tipo: "producao"
+    prioridade: 3
+    recorte_maximo_percent: 100
+  - nome: "Producao-Utilidades"
+    tipo: "producao"
+    prioridade: 3
+    recorte_maximo_percent: 100
